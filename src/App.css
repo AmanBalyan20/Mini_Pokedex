@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.background-image { /* Update the path as needed */
+  background-size: 100% 100%; /* Scale the image to cover the entire body */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-attachment: fixed; /* Fixed background position */
+}
+.heading-container{
+  display: flex;
+  justify-content: center;
+}
+.heading{
+  
+  color:white;
+  /* margin-top: -5px; */
+  display: inline-block;
+  padding: 10px 50px;
+  background: rgba(131, 62, 62, 0);
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(40, 39, 43, 0.25);
+  border-radius: 50px;
+  
+}
+.typeButton{
+  padding: 15px;
+  background: transparent;
+  margin:4px;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: 2px solid white;
+  color:white;
+  /* border:none; */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.typeButton:hover{
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Modal-button{
+  padding:20px;
+  margin: 20px;
+  background-color:darkcyan;
+  color:black;
+  border:2px solid darkcyan;
+  border-radius: 20px;
+  width:150px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.Modal-button:hover , .close:hover{
+  background-color: transparent;
+  color:black
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.close , .load-more{
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  width:200px;
+  padding: 20px;
+  background-color:firebrick;
+  color:black;
+  font-size: 20px;
+  text-transform:uppercase;
+  font-weight: bolder;
+  border-radius: 20px;
+  border: 2px solid rgb(190, 64, 64);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3,small,.number{
+  color:white;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card-style {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1.5rem 0 ;
+  margin: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+  background: rgba(131, 62, 62, 0);
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(40, 39, 43, 0.25);
+  border-radius: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-style img {
+  width: 120px;
+  height: 120px;
+}
+.card-style small {
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-style:hover{
+  background-color: lightseagreen; 
 }
