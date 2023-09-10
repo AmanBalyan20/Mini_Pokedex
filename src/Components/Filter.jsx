@@ -13,9 +13,7 @@ function Filter() {
                 const typeData = data.results;
                 setTypes(typeData);
             })
-            .catch(error => {
-                console.error('Error fetching Pokémon types:', error);
-            });
+           
     }, []);
 
     const toggleModal = () => {
